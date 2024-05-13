@@ -1,11 +1,9 @@
- 
-<html>
+<!DOCTYPE html>
+<html lang="tr">
 <head>
-     <title>Eren Albayrak Web Projesi</title>
-     <link href="css/bootstrap.min.css" rel="stylesheet">
-     <script src="js/bootstrap.bundle.min.js"></script>
-
- </head>
+    <title>Eren Albayrak Web Projesi</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" style="margin-left:+10px" href="index.html">ANASAYFA</a>
@@ -17,15 +15,25 @@
                 <li class="nav-item"><a class="nav-link" href="index.html">Hakkýnda</a></li>
                 <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
                 <li class="nav-item"><a class="nav-link" href="sehirim.html">Þehrim</a></li>
-                <li class="nav-item"><a class="nav-link" href="ilgialanlari.html" style="font-weight: bold; color: lightgray;">Ýlgi Alanlarým</a></li>
+                <li class="nav-item"><a class="nav-link active" >Ýlgi Alanlarým</a></li>
                 <li class="nav-item"><a class="nav-link" href="giris.html">Giriþ</a></li>
                 <li class="nav-item"><a class="nav-link" href="iletisim.html">Ýletiþim</a></li>
             </ul>
         </div>
     </nav>
     <div class="container mt-5">
-        <h1>Chess.com Lider Tablosu</h1>
-        <div id="leaderboards"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Satranç Dünyasý</h1>
+                <img src="chess-image.jpg" alt="Satranç Görseli" class="img-fluid">
+                <p>Satranç, strateji ve taktiklerin oyunudur. Ýki rakip, 64 kareli tahtada beyaz ve siyah taþlarla mücadele eder.</p>
+            </div>
+            <div class="col-md-6">
+                <h1>Chess.com Lider Tablosu</h1>
+                <div id="leaderboards" style="background-color: rgb(128, 128, 128); padding: 15px; border-radius: 5px;">
+                </div>
+            </div>
+        </div>
     </div>
     <script>
         function fetchLeaderboards() {
@@ -57,10 +65,10 @@
             html += '<thead><tr><th>Sýra</th><th>Kullanýcý Adý</th><th>Puan</th></tr></thead><tbody>';
             leaderboard.forEach(player => {
                 html += `<tr>
-                            <td>${player.rank}</td>
-                            <td><a href="${player.url}">${player.username}</a></td>
-                            <td>${player.score}</td>
-                         </tr>`;
+                                <td>${player.rank}</td>
+                                <td><a href="${player.url}">${player.username}</a></td>
+                                <td>${player.score}</td>
+                             </tr>`;
             });
             html += '</tbody></table></div>';
             return html;
@@ -68,9 +76,6 @@
 
         fetchLeaderboards();
     </script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

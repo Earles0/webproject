@@ -15,9 +15,10 @@
                 <li class="nav-item"><a class="nav-link" href="index.html">Hakkýnda</a></li>
                 <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
                 <li class="nav-item"><a class="nav-link" href="sehirim.html">Þehrim</a></li>
-                <li class="nav-item"><a class="nav-link active" >Ýlgi Alanlarým</a></li>
+                <li class="nav-item"><a class="nav-link active">Ýlgi Alanlarým</a></li>
                 <li class="nav-item"><a class="nav-link" href="giris.html">Giriþ</a></li>
                 <li class="nav-item"><a class="nav-link" href="iletisim.html">Ýletiþim</a></li>
+                <li class="nav-item"><a id="username-display" class="nav-link "></a></li>
             </ul>
         </div>
     </nav>
@@ -35,6 +36,16 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('username-display').textContent = `Hoþgeldiniz, ${username}`;
+            } else {
+                document.getElementById('username-display').textContent = '';
+            }
+        });
+    </script>
     <script>
         function fetchLeaderboards() {
             fetch('https://api.chess.com/pub/leaderboards')
@@ -65,10 +76,10 @@
             html += '<thead><tr><th>Sýra</th><th>Kullanýcý Adý</th><th>Puan</th></tr></thead><tbody>';
             leaderboard.forEach(player => {
                 html += `<tr>
-                                <td>${player.rank}</td>
-                                <td><a href="${player.url}">${player.username}</a></td>
-                                <td>${player.score}</td>
-                             </tr>`;
+                                    <td>${player.rank}</td>
+                                    <td><a href="${player.url}">${player.username}</a></td>
+                                    <td>${player.score}</td>
+                                 </tr>`;
             });
             html += '</tbody></table></div>';
             return html;

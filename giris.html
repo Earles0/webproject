@@ -1,8 +1,6 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Giriş Sayfası</title>
+    <title id=" username-display">Giriş Sayfası </title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -18,7 +16,8 @@
                 <li class="nav-item"><a class="nav-link" href="sehirim.html">Şehrim</a></li>
                 <li class="nav-item"><a class="nav-link" href="ilgialanlari.html">İlgi Alanlarım</a></li>
                 <li class="nav-item"><a class="nav-link active" href="giris.html">Giriş</a></li>
-                <li class="nav-item"><a class="nav-link" href = "iletisim.html">İletişim</a></li>
+                <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                <li class="nav-item"><a id="username-display" class="nav-link "></a></li>
             </ul>
         </div>
     </nav>
@@ -41,10 +40,11 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const urlParametreleri = new URLSearchParams(window.location.search);
-            const hata = urlParametreleri.get('error');
-            if (hata === 'gecersiz') {
-                document.getElementById('hata-mesaji').style.display = 'block';
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('username-display').textContent = `Hoşgeldiniz, ${username}`;
+            } else {
+                document.getElementById('username-display').textContent = '';
             }
         });
     </script>

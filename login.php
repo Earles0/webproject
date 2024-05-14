@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     if (empty($email) || empty($password)) {
-        header("Location: giris.html?error=gecersiz");
+        header("Location: giris.html");
         exit;
     }
 
@@ -16,9 +16,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_prefix = explode("@", $email)[0];
 
     if ($password === $email_prefix) {
-        echo "Hoşgeldiniz, " . $email_prefix;
+        echo '<script>
+                localStorage.setItem("username", "' . $email_prefix . '");
+                window.location.href = "index.html";
+              </script>';
     } else {
-        header("Location: giris.html?error=gecersiz");
+        header("Location: giris.html");
         exit;
     }
 }

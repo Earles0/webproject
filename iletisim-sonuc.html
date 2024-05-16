@@ -2,11 +2,10 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>İletişim - Eren Albayrak Web Projesi</title>
+    <title>İletişim Sonuçları</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="stil.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -21,40 +20,40 @@
                 <li class="nav-item"><a class="nav-link" href="sehirim.html">Şehrim</a></li>
                 <li class="nav-item"><a class="nav-link" href="ilgialanlari.html">İlgi Alanlarım</a></li>
                 <li class="nav-item"><a class="nav-link" href="giris.html">Giriş</a></li>
-                <li class="nav-item"><a class="nav-link active" href="iletisim.html">İletişim</a></li>
+                <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
                 <li class="nav-item"><a id="username-display" class="nav-link"></a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container mt-5">
-        <h1>İletişim</h1>
+        <h1>İletişim Sonuçları</h1>
         <div id="app">
-            <form @submit.prevent="validateForm" action="iletisim-sonuc.php" method="POST" novalidate>
-                <div class="form-group">
-                    <label for="name">Adınız:</label>
-                    <input type="text" id="name" name="name" class="form-control" v-model="form.name" required>
-                    <div v-if="errors.name" class="text-danger">{{ errors.name }}</div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" v-model="form.email" required>
-                    <div v-if="errors.email" class="text-danger">{{ errors.email }}</div>
-                </div>
-                <div class="form-group">
-                    <label for="message">Mesajınız:</label>
-                    <textarea id="message" name="message" class="form-control" v-model="form.message" required></textarea>
-                    <div v-if="errors.message" class="text-danger">{{ errors.message }}</div>
-                </div>
-                <button type="submit" class="btn btn-primary">Gönder</button>
-                <button type="reset" class="btn btn-secondary" @click="resetForm">Temizle</button>
-            </form>
+            <p><strong>Adınız:</strong> {{ name }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+            <p><strong>Mesajınız:</strong> {{ message }}</p>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="iletisim.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                name: '',
+                email: '',
+                message: ''
+            },
+            created() {
+                const urlParams = new URLSearchParams(window.location.search);
+                this.name = urlParams.get('name');
+                this.email = urlParams.get('email');
+                this.message = urlParams.get('message');
+            }
+        });
+    </script>
 </body>
 </html>

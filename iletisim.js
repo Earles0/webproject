@@ -31,8 +31,8 @@ new Vue({
             }
 
             if (!this.errors.name && !this.errors.email && !this.errors.message) {
-                alert('Form başarıyla gönderildi!');
-                // Form verilerini başka bir sayfada görüntüleme işlemi burada yapılabilir
+                // Formu gönder
+                this.$el.querySelector('form').submit();
             }
         },
         resetForm() {

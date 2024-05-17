@@ -1,41 +1,71 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>Eren Albayrak Web Projesi</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Hakkında - Eren Albayrak Web Projesi</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="stil.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand " style="margin-left:+10px" href="index.html"> ANASAYFA </a>
+        <a class="navbar-brand" href="index.html">ANASAYFA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
+                <li class="nav-item"><a class="nav-link active" href="hakkinda.html">Hakkında</a></li>
                 <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-                <li class="nav-item"><a class="nav-link" href="sehirim.html">Şehirim</a></li>
+                <li class="nav-item"><a class="nav-link" href="sehirim.html">Şehrim</a></li>
                 <li class="nav-item"><a class="nav-link" href="ilgialanlari.html">İlgi Alanlarım</a></li>
                 <li class="nav-item"><a class="nav-link" href="giris.html">Giriş</a></li>
                 <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
-                <li class="nav-item"><a id="username-display" class="nav-link "></a></li>
+                <li class="nav-item"><a id="username-display" class="nav-link"></a></li>
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <h1 class="text-center">Hoş Geldiniz!</h1>
 
+    <div class="container mt-5">
+        <h1>Hakkımda</h1>
+        <p>Merhaba, ben Eren Albayrak. Web teknolojileri konusunda kendimi geliştirmeyi seviyorum ve boş zamanlarımda çeşitli hobilerle ilgileniyorum. Bu sayfada hobilerim, sevdiğim etkinlikler ve takip ettiğim teknoloji YouTuber'ları hakkında bilgi bulabilirsiniz.</p>
+        
+        <h2>Hobilerim</h2>
+        <ul>
+            <li>Satranç oynamak</li>
+            <li>Kitap okumak</li>
+            <li>Film izlemek</li>
+            <li>Teknoloji takibi</li>
+        </ul>
+
+        <h2>Sevdiğim Film: Spider-Man: Across the Spider-Verse</h2>
+        <p>"Spider-Man: Across the Spider-Verse" (Örümcek-Adam: Örümcek Evreni Ötesinde), animasyon dünyasında yeni bir çığır açan ve hikaye anlatımıyla izleyicileri büyüleyen bir film. Bu film, önceki yapım olan "Into the Spider-Verse"un devamı niteliğinde olup, çoklu evren konseptini derinleştirerek izleyicilere daha geniş bir perspektif sunuyor. Görsel efektler, karakterlerin derinliği ve anlatılan hikayenin karmaşıklığı filmi gerçekten özel kılıyor.</p>
+        <div class="embed-responsive embed-responsive-16by9 mb-3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/shW9i6k8cB0" allowfullscreen></iframe>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="spiderverse1.jpg" alt="Spider-Man: Across the Spider-Verse"  class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="spiderverse2.jpg" alt="Spider-Man: Across the Spider-Verse" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="spiderverse3.webp" alt="Spider-Man: Across the Spider-Verse" class="img-fluid">
+            </div>
+        </div>
+
+        <h2>Takip Ettiğim Teknoloji YouTuber'ları</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/user/MarquesBrownlee" target="_blank">Marques Brownlee (MKBHD)</a></li>
+            <li><a href="https://www.youtube.com/user/UnboxTherapy" target="_blank">Unbox Therapy</a></li>
+            <li><a href="https://www.youtube.com/user/LinusTechTips" target="_blank">Linus Tech Tips</a></li>
+            <li><a href="https://www.youtube.com/user/AustinEvans" target="_blank">Austin Evans</a></li>
+        </ul>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const username = localStorage.getItem('username');
-            if (username) {
-                document.getElementById('username-display').textContent = `Hoşgeldiniz, ${username}`;
-            } else {
-                document.getElementById('username-display').textContent = '';
-            }
-        });
-    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

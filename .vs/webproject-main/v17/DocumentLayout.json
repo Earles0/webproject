@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\wamp64\\www\\webproject-main\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\webproject-main\\cv.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cv.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\webproject-main\\ilgialanlari.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ilgialanlari.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\webproject-main\\sehirim.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sehirim.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\webproject-main\\cv.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cv.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "sehirim.html",
               "DocumentMoniker": "C:\\wamp64\\www\\webproject-main\\sehirim.html",
               "RelativeDocumentMoniker": "sehirim.html",
@@ -55,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "iletisim.html",
               "DocumentMoniker": "C:\\wamp64\\www\\webproject-main\\iletisim.html",
               "RelativeDocumentMoniker": "iletisim.html",
@@ -63,12 +63,11 @@
               "RelativeToolTip": "iletisim.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-05-14T12:24:26.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T12:24:26.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "index.html",
               "DocumentMoniker": "C:\\wamp64\\www\\webproject-main\\index.html",
               "RelativeDocumentMoniker": "index.html",
@@ -76,25 +75,24 @@
               "RelativeToolTip": "index.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-05-13T18:36:44.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T18:36:44.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ilgialanlari.html",
               "DocumentMoniker": "C:\\wamp64\\www\\webproject-main\\ilgialanlari.html",
               "RelativeDocumentMoniker": "ilgialanlari.html",
               "ToolTip": "C:\\wamp64\\www\\webproject-main\\ilgialanlari.html",
               "RelativeToolTip": "ilgialanlari.html",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADAAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-05-12T16:59:47.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "giris.html",
               "DocumentMoniker": "C:\\wamp64\\www\\webproject-main\\giris.html",
               "RelativeDocumentMoniker": "giris.html",
@@ -102,12 +100,11 @@
               "RelativeToolTip": "giris.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-05-12T16:56:37.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T16:56:37.048Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "login.php",
               "DocumentMoniker": "C:\\wamp64\\www\\webproject-main\\login.php",
               "RelativeDocumentMoniker": "login.php",
@@ -115,20 +112,20 @@
               "RelativeToolTip": "login.php",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-14T18:15:39.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T18:15:39.241Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "cv.html",
               "DocumentMoniker": "C:\\wamp64\\www\\webproject-main\\cv.html",
               "RelativeDocumentMoniker": "cv.html",
               "ToolTip": "C:\\wamp64\\www\\webproject-main\\cv.html",
               "RelativeToolTip": "cv.html",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwB0AAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-05-12T16:56:12.974Z"
+              "WhenOpened": "2024-05-12T16:56:12.974Z",
+              "EditorCaption": ""
             }
           ]
         }

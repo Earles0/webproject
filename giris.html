@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Giriş Sayfası</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="stil.css" rel="stylesheet">
 </head>
 <body>
@@ -25,11 +24,11 @@
             </ul>
         </div>
     </nav>
-
-    <div class="container mt-5">
+    <br>
+    <div class="container">
         <h2>Giriş</h2>
         <div id="hata-mesaji" class="alert alert-danger" style="display: none;">Geçersiz giriş bilgileri. Lütfen tekrar deneyin.</div>
-        <br />
+        <br>
         <form action="login.php" method="POST">
             <div class="form-group">
                 <label for="email">E-posta:</label>
@@ -40,7 +39,7 @@
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
             <br />
-            <button type="submit" class="btn btn-primary">Giriş Yap</button>
+            <button type="submit">Giriş Yap</button>
         </form>
     </div>
 
@@ -55,7 +54,6 @@
         });
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

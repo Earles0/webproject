@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Eren Albayrak Web Projesi</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="stil.css" rel="stylesheet">
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -26,8 +26,8 @@
         </div>
     </nav>
 
-    <header class="text-center my-4">
-        <img src="erenalbayrakresim.jpg" alt="Profil Resmi" class="rounded-circle" width="150">
+    <header class="text-center">
+        <img src="erenalbayrakresim.jpg" width="150">
         <h1>Eren Albayrak</h1>
         <p>Bilgisayar Mühendisliği Öğrencisi 1. Sınıf</p>
     </header>
@@ -37,7 +37,7 @@
             <h2>İletişim Bilgileri</h2>
             <ul>
                 <li>Email: <a href="mailto:eren.albayrak@ogr.sakarya.edu.tr">eren.albayrak@ogr.sakarya.edu.tr</a></li>
-                <li>Github: <a href="https://github.com/Earles0" target="_blank">Github Hesabı</a></li>
+                <li>Github: <a href="https://github.com/Earles0">Github Hesabı</a></li>
             </ul>
         </section>
         <section>
@@ -63,7 +63,7 @@
             <div>
                 <h4>Web Projesi</h4>
                 <p>Kendimi ve şehrimi tanıtan bir web sitesi</p>
-                <a href="https://github.com/Earles0/webproject" target="_blank">Web projesi Github Linki</a>
+                <a href="https://github.com/Earles0/webproject">Web projesi Github Linki</a>
             </div>
         </section>
         <section>
@@ -73,9 +73,18 @@
             </ul>
         </section>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('username-display').textContent = `Hoşgeldiniz, ${username}`;
+            } else {
+                document.getElementById('username-display').textContent = '';
+            }
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

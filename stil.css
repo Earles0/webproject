@@ -8,10 +8,6 @@
     object-fit: cover; 
 }
 
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -21,33 +17,22 @@ body {
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
-    margin-bottom: 1rem;
 }
 
 h1 {
-    font-size: 3rem;
     color: #2c3e50;
 }
 
 h2 {
-    font-size: 2rem;
     color: #2980b9;
 }
 
-p {
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
 
 .card {
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
 }
 
 .carousel-item img {
@@ -60,16 +45,6 @@ p {
     border-radius: 10px;
     margin-bottom: 2rem;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.btn-primary {
-    background-color: #2980b9;
-    border: none;
-    transition: background-color 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: #1a5f8a;
 }
 
 .image-container {

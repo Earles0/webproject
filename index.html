@@ -15,7 +15,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="hakkinda.html">Hakkında</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html">Hakkında</a></li>
                 <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
                 <li class="nav-item"><a class="nav-link" href="sehirim.html">Şehrim</a></li>
                 <li class="nav-item"><a class="nav-link" href="ilgialanlari.html">İlgi Alanlarım</a></li>
@@ -63,6 +63,16 @@
             <li><a href="https://www.youtube.com/user/AustinEvans" target="_blank">Austin Evans</a></li>
         </ul>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('username-display').textContent = `Hoşgeldiniz, ${username}`;
+            } else {
+                document.getElementById('username-display').textContent = '';
+            }
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

@@ -55,5 +55,15 @@
             }
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('username-display').textContent = `Hoşgeldiniz, ${username}`;
+            } else {
+                document.getElementById('username-display').textContent = '';
+            }
+        });
+    </script>
 </body>
 </html>

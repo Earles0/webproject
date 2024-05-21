@@ -25,6 +25,7 @@
                 <li class="nav-item"><a class="nav-link" href="giris.html">Giriş</a></li>
                 <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
                 <li class="nav-item"><a class="nav-link active" href="trabzonspor.html" style="font-weight: bold; color: lightgray;">Trabzonspor</a></li>
+                <li class="nav-item"><a id="username-display" class="nav-link"></a></li>
             </ul>
         </div>
     </nav>
@@ -124,6 +125,16 @@
             <img src="trabzonspor_logo.png" alt="Trabzonspor'un Logosu" width="50">
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('username-display').textContent = `Hoşgeldiniz, ${username}`;
+            } else {
+                document.getElementById('username-display').textContent = '';
+            }
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
